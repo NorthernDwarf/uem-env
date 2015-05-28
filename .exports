@@ -1,0 +1,19 @@
+# Shamelessly stolen from https://github.com/paulirish/dotfiles
+# Make Emacs the default editor
+export EDITOR="emacs"
+
+# Don't clear the screen after quitting a manual page
+export MANPAGER="less -X"
+
+# Larger bash history (allow 32^3 entries; default is 500)
+export HISTSIZE=32768
+export HISTFILESIZE=$HISTSIZE
+export HISTCONTROL=ignoredups
+
+# timestamps for back history. www.debian-administration.org/users/rossen/weblog/1
+# saved for later analysis
+HISTTIMEFORMAT='%F %T '
+export HISTTIMEFORMAT
+
+# Make some commands not show in history
+#export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
