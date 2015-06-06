@@ -17,3 +17,11 @@ export HISTTIMEFORMAT
 
 # Make some commands not show in history
 #export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
+
+# Add GOO_ROOT so GOO can find its files
+export GOO_ROOT=/home/duncan/workspace/ool
+
+# Add JDK 8 to the path
+
+export JAVA_HOME=/home/duncan/Installed/jdk1.8.0_45
+export PATH=$JAVA_HOME/bin:$PATH
